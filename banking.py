@@ -124,7 +124,8 @@ def log_into_account():
     else:
         print("Wrong card number or PIN!\n")
 
-cur.execute("DROP TABLE IF EXISTS card")
+#clear table if you need
+#cur.execute("DROP TABLE IF EXISTS card") 
 create_db()
 while True:
     print('1. Create an account\n2. Log into account\n0. Exit')
